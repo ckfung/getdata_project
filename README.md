@@ -1,4 +1,4 @@
-## Overview
+## Getting and Cleaning Data Course Project
 The script "run_analysis.R" works as below:
 
 ###Pre-requisite:
