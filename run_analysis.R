@@ -34,5 +34,11 @@ names(data1) = gsub("mean", "Mean", names(data1))
 names(data1) = gsub("std", "Std", names(data1))
 names(data1) = gsub("\\(\\)", "", names(data1))
 
-# Write to file
-write.table(data1, "data1.txt", row.name=FALSE)
+# Make tidy data
+tidydata = aggregate(data1, by=list(activity = data1$activity, subject=data1$subject), mean)
+tidydata[,4] = NULL
+tidydata[,3] = NULL
+
+# Write data to file
+write.table(tidydata, "tidydata.txt", row.name=FALSE)
+
