@@ -23,3 +23,11 @@ The following files are available for the train and test data. Their description
 * 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 * 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
+
+## Output Details
+The output from this run_analysis.R script is tidydata.txt. This file contains the mean and std variables which were averaged based on the each activity and each variables
+
+This unit of the output data is standard gravity units 'g' as decribed in the README.txt of the dataset
+
+## Steps for executing run_analysis.R
+* Please refer to README.md for run_analysis.R details
